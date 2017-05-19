@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayi Labs</title>
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%= favicon_link_tag 'icon.ico' %>
+
+
+ <%= stylesheet_link_tag    'fonts' %>
+ <%= stylesheet_link_tag    'bootstrap.min' %>
+ <%= stylesheet_link_tag    'lightbox' %>
+ <%= stylesheet_link_tag    'owl.theme' %>
+ <%= stylesheet_link_tag    'owl.carousel' %>
+ <%= stylesheet_link_tag    'style' %>
+  <%= stylesheet_link_tag    'responsive' %>
+ 
+ <%= javascript_include_tag 'jquery.min' %>
+ <%= javascript_include_tag 'bootstrap.min' %>
+ <%= javascript_include_tag 'jquery.sticky' %>
+ <%= javascript_include_tag 'jquery.smooth-scroll' %>
+ <%= javascript_include_tag 'isotope.pkgd.min' %>
+ <%= javascript_include_tag 'lightbox.min' %>
+ <%= javascript_include_tag 'jquery.counterup.min' %>
+ <%= javascript_include_tag 'owl.carousel.min' %>
+ <%= javascript_include_tag 'slides.min.jquery' %>
+ <%= javascript_include_tag 'waypoints.min' %>
+ <%= javascript_include_tag 'parsley.min' %>
+ <%= javascript_include_tag 'script' %>
+  
+
+
+
+ 
+  <%= csrf_meta_tags %>
+
+
+
+
+
+  
+   <script src="https://use.fontawesome.com/135bfc18e0.js"></script>
+</head>
+<body>
+
+		<section class="header blue-header">
+			<header id="fixed-main-menu" class="clearfix blue-header">
+				<div class="container">
+					<nav class="navbar navbar-default blue-header" role="navigation">
+						
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="responsive-navbar-brand" href="index.html"><img   src="<%= asset_path 'KayiLogo.png' %>" alt="Logo"></a>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="main-menu">
+						 
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="#hello">Inicio</a></li>
+								<li><a href="#about">Acerca</a></li>
+								<li><a href="#services">Proceso</a></li>
+								
+							</ul>
+							
+							<a class="site-logo" href="index.html">
+							<img class="logo-size" src="<%= asset_path 'KayiLogo.png' %>" alt="logo"></a>
+							
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#works">Startups</a></li>
+								<li><a href="#empresas">Empresas</a></li>
+								<li><a href="#laboratorio">Laboratorio</a></li>
+								
+								<li><a href="#contact">Contacto</a></li>
+							</ul>
+							
+						</div>
+					</nav>
+				</div>
+			</header>
+		</section>
+<%= yield %>
+		<section class="footer-top blue-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="social-icon-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								
+								
+								
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								
+								<li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="footer-bottom blue-bg-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="footer-bottom-text">&copy; 2017 <span class="highlight-text">Kayi Labs.</span> ALL RIGHT RESERVED. </span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div id="backtotop">
+			<ul>
+				<li><a id="toTop" href="#home" onClick="return false">Back to Top</a></li>
+			</ul>
+		</div>
+		
+		
+</body>
+</html>
